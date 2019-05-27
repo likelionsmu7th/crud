@@ -1,0 +1,14 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+<h1>crud/new.html</h1>
+
+<form method='POST'>
+    {% csrf_token %}
+    <div class='container'>
+        {{form}}
+        <br/>
+        <input type='submit' class='btn btn-primary btn-block' value='등록'>
+    </div>
+</form>
